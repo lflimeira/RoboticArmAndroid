@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="br.com.andruinobluetooth"
+    android:versionCode="1"
+    android:versionName="0.1">
+
+    <!-- Compatibilidade API.. -->
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="21" />
+
+    <!-- Permissão -->
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/robotic_arm_ico"
+        android:label="@string/app_nome"
+        android:theme="@style/Theme.MyTheme">
+
+        <activity
+            android:name=".DeviceListActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/app_nome">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- AnduinoActivity -->
+        <activity
+            android:name=".AndruinoActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_andruino" />
+    </application>
+
+</manifest>

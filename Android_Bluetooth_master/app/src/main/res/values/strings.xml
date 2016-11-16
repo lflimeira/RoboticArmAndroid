@@ -1,0 +1,11 @@
+<resources>
+
+    <string name="app_nome"> Controle Robótico</string>
+
+    <string name="action_configuracoes"> Configurações</string>
+    <string name="title_activity_andruino"> Andruino</string>
+
+    <string name="nao_pareado"> Nenhum dispositivo pareado!</string>
+    <string name="selecione_dispositivo"> Selecione um dispositivo da lista!</string>
+
+</resources>

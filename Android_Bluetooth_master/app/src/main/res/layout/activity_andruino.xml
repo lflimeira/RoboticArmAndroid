@@ -1,0 +1,113 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    tools:context=".AndruinoActivity">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tb_main"
+        android:elevation="2dp"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:minHeight="?attr/actionBarSize"
+        android:layout_alignParentLeft="true"
+        android:background="?attr/colorPrimary"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+
+    <SeekBar
+        android:id="@+id/seekBarBase"
+        android:layout_width="300dp"
+        android:layout_height="100px"
+        android:max="180"
+        android:layout_above="@+id/seekBarAlcance"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="48dp"
+        android:background="@color/grey"
+        />
+
+    <SeekBar
+        android:id="@+id/seekBarAlcance"
+        android:layout_width="300dp"
+        android:layout_height="100px"
+        android:max="180"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/grey" />
+
+    <SeekBar
+        android:id="@+id/seekBarB"
+        android:layout_width="300dp"
+        android:layout_height="100px"
+        android:max="180"
+        android:layout_marginTop="48dp"
+        android:layout_below="@+id/seekBarAlcance"
+        android:layout_alignLeft="@+id/seekBarAlcance"
+        android:layout_alignStart="@+id/seekBarAlcance"
+        android:focusableInTouchMode="false"
+        android:mirrorForRtl="false"
+        android:indeterminate="false"
+        android:splitTrack="false"
+        android:background="@color/grey" />
+
+    <Button
+        android:id="@+id/buttonAbrir"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Abrir"
+        android:layout_marginTop="48dp"
+        android:layout_below="@+id/seekBarB"
+        android:layout_alignLeft="@+id/seekBarB"
+        android:layout_alignStart="@+id/seekBarB" />
+
+    <Button
+        android:id="@+id/buttonFechar"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Fechar"
+        android:layout_marginTop="48dp"
+        android:layout_marginLeft="148dp"
+        android:layout_below="@+id/seekBarB"
+        android:layout_alignLeft="@+id/buttonAbrir"
+        android:layout_alignStart="@+id/seekBarB" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:id="@+id/textViewR"
+        android:layout_alignTop="@+id/seekBarBase"
+        android:layout_alignLeft="@+id/seekBarBase"
+        android:layout_alignStart="@+id/seekBarBase" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:id="@+id/textViewG"
+        android:layout_below="@+id/seekBarBase"
+        android:layout_alignLeft="@+id/seekBarAlcance"
+        android:layout_alignStart="@+id/seekBarAlcance" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:id="@+id/textViewB"
+        android:layout_alignTop="@+id/seekBarB"
+        android:layout_alignLeft="@+id/seekBarB"
+        android:layout_alignStart="@+id/seekBarB" />
+
+
+
+    <!--<include-->
+        <!--android:id="@+id/inc_tb_bottom"-->
+        <!--layout="@layout/toolbar_bottom" />-->
+
+</RelativeLayout>

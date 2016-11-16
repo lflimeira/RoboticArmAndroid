@@ -1,0 +1,27 @@
+<resources>
+
+    <style name="Theme.MyTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- colorPrimary is used for the default action bar background -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+
+        <!-- colorPrimaryDark is used for the status bar -->
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+
+        <!-- colorAccent is used as the default value for colorControlActivated, which is used to tint widgets -->
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <!-- You can also set colorControlNormal, colorControlActivated colorControlHighlight, and colorSwitchThumbNormal. -->
+        <item name="colorControlNormal">@android:color/white</item>
+    </style>
+
+    <style name="Theme.MyTheme.Bottom" parent="Theme.MyTheme">
+        <item name="colorPrimary">@android:color/white</item>
+    </style>
+
+    <style name="MyAlertDialog" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@null</item>
+        <item name="android:background">@null</item>
+        <item name="android:padding">0dp</item>
+    </style>
+
+</resources>
