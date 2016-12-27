@@ -1,19 +1,3 @@
- // Control 2 servo motors over Bluetooth using RoboRemo app
-// www.roboremo.com
-
-// Hardware setup:
-// BT module   Arduino
-// GND ------- GND
-// VCC ------- 5V
-// TX-O ------ pin0
-// RX-I ------ pin1
-
-// Servos       Arduino
-// GND ------- GND
-// VCC ------- VCC
-// signal1 ---- pin7
-// signal2 ---- pin4
-
 #define bluetooth Serial
 #include <Servo.h>
 
@@ -40,7 +24,9 @@ void exeCmd() {
   
   // "servo1" is the id for servo motor 1
   // "servo2" is the id for servo motor 2
-  
+  // "servo3" is the id for servo motor 3
+  // "abrir " and "fechar " are the id for open and close the servo motor 4
+ 
   if( cmdStartsWith("servo1 ") ) { // example: if cmd is "servo1 1500"
     int val = atoi(cmd+7);  // val will be 1500
                             // cmd+7, because value comes after "servo1 " which is 7 characters
