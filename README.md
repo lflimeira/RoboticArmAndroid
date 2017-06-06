@@ -1,5 +1,7 @@
 # RoboticArmAndroid
 
+![Robotic Arm](https://github.com/lflimeira/RoboticArmAndroid/blob/master/imgs/braco.jpg)
+
 ## How to build the project (Como construir o projeto)
 
 [Link in Portuguese (Link em Português)](https://lfcodes.wordpress.com/2016/11/27/braco-robotico-controlado-por-android/)
