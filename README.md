@@ -16,7 +16,7 @@
 
 ## Installation
 
-1. Install [Android Satudio](https://developer.android.com/studio/index.html?hl=pt-br) on your computer.
+1. Install [Android Studio](https://developer.android.com/studio/index.html?hl=pt-br) on your computer.
 2. Install [Arduino IDE](https://www.arduino.cc/en/main/software) on your computer.
 3. Clone/download this folder to your computer.
 4. Open Android_Bluetooth_master in Android Studio and run it to your emulator or Android smartphone.
